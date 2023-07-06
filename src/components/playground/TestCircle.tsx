@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import React from 'react';
 
-export default function TestBlob() {
+export default function TestCircle() {
     return (
         <div className='flex w-full h-full blur-2xl'>
             <motion.svg 
