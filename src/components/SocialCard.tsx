@@ -10,7 +10,7 @@ export interface SocialCardProps {
 }
 
 export const SocialCard: React.FC<SocialCardProps> = ({ hrefLink, type, logoURL, details}) => (
-    <a href={hrefLink} className='transition ease-in-out flex flex-col gap-y-2 bg-zinc-800/50 hover:bg-zinc-800 p-4 rounded-lg border-none border-2 border-zinc-500 hover:border-solid'>
+    <a href={hrefLink} className='transition ease-in-out flex flex-col gap-y-2 bg-zinc-800/50 hover:bg-zinc-800 p-4 rounded-lg border-solid border-2 border-zinc-500/0 hover:border-zinc-500/100'>
         <div className='flex flex-row gap-x-2 items-center justify-between'>
         <div className='flex flex-row gap-x-2 items-center'>
             <div className='relative h-8 w-8'>
@@ -24,7 +24,7 @@ export const SocialCard: React.FC<SocialCardProps> = ({ hrefLink, type, logoURL,
             </div>
             <h3 className='font-bold'>{type}</h3>
         </div>
-        <div className='relative h-6 w-6'>
+        <div className='relative h-4 w-4 md:h-6 md:w-6'>
             <Image 
             src={rightArrow}
             className='rounded-full' 
