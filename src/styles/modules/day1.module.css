@@ -1,0 +1,53 @@
+.card_day1 {
+    @apply relative bg-white text-black w-fit h-fit p-24 rounded-lg;
+}
+
+.card_day1:before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background:
+      radial-gradient(circle at calc(var(--x) * 1px) calc(var(--y) * 1px), hsl(0 0% 100% / 0.5), transparent 15vmin),
+      transparent;
+    background-attachment: fixed;
+    pointer-events: none;
+    mask:
+      linear-gradient(white, white) 50% 0 / 100% 4px no-repeat,
+      linear-gradient(white, white) 50% 100% / 100% 4px no-repeat,
+      linear-gradient(white, white) 0 50% / 4px 100% no-repeat,
+      linear-gradient(white, white) 100% 50% / 4px 100% no-repeat;
+  }
+
+
+/* .circle {
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: var(--positionX);
+  }
+  
+  @keyframes moveAround {
+    0% {
+      top: 0;
+      left: 0;
+    }
+    25% {
+      top: 0;
+      left: calc(100% - 20px);
+    }
+    50% {
+      top: calc(100% - 20px);
+      left: calc(100% - 20px);
+    }
+    75% {
+      top: calc(100% - 20px);
+      left: 0;
+    }
+    100% {
+      top: 0;
+      left: 0;
+    }
+  } */
