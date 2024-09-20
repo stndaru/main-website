@@ -1,12 +1,14 @@
 import Image from 'next/image'
-import { Inter } from 'next/font/google'
+import { Plus_Jakarta_Sans } from 'next/font/google';
 import { motion } from "framer-motion";
 import { HeadComponent } from "../../components/core/HeadComponent"
 // import styles from '../../styles/modules/day1.module.css';
 import { useState, useEffect } from 'react';
 
 
-const inter = Inter({ subsets: ['latin'] })
+const plusJakartaSans = Plus_Jakarta_Sans({
+    subsets: ['latin']
+  });
 
 export default function Home() {
 
@@ -33,8 +35,7 @@ export default function Home() {
     return (
     <>
         <HeadComponent />
-        <div className={`flex h-screen flex-col items-center justify-between bg-zinc-950 ${inter.className}`}>
-
+        <div className={`flex h-screen flex-col items-center justify-between bg-zinc-950 ${plusJakartaSans.className}`}>
 
             
             <div className='flex w-full h-full z-10 items-center content-center justify-center gap-4'>
