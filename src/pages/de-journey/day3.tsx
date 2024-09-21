@@ -1,12 +1,19 @@
 import Image from 'next/image'
-import { Inter } from 'next/font/google'
+import { Plus_Jakarta_Sans, Borel } from 'next/font/google';
 import { motion } from "framer-motion";
 import { HeadComponent } from "../../components/core/HeadComponent"
 // import styles from '../../styles/modules/day1.module.css';
 import { useState, useEffect } from 'react';
 
 
-const inter = Inter({ subsets: ['latin'] })
+const plusJakartaSans = Plus_Jakarta_Sans({
+    subsets: ['latin']
+  });
+
+  const borel = Borel({
+    subsets: ['latin'],
+    weight: ['400']
+  });
 
 export default function Home() {
 
@@ -33,28 +40,26 @@ export default function Home() {
     return (
     <>
         <HeadComponent />
-        <div className={`flex h-screen flex-col items-center justify-between bg-zinc-950 ${inter.className}`}>
-
+        <div className={`flex h-screen flex-col items-center justify-between bg-zinc-950 ${plusJakartaSans.className}`}>
 
             
             <div className='flex w-full h-full z-10 items-center content-center justify-center gap-4'>
-                <div className='flex flex-col relative bg-gradient-to-b from-[hsl(0_0%_12%)] to-[hsl(0_0%_8%)] w-20% h-fit transition-[background 0.1s] rounded-[12px] p-8 gap-4 group shadow-inner shadow-slate-500/10'>
-                    {/* <div className='absolute -z-10 inset-0 w-[102%] h-[103%] -top-[1.5%] -left-[1%] rounded-[14px] bg-transparent group-hover:bg-[hsla(0,0%,50%,0.5)] transition-colors duration-300'></div> */}
-                    <div className='absolute -z-20 inset-0 w-[102%] h-[103%] -top-[1.5%] -left-[1%] rounded-[14px] pointer-events-none blud-md shine'></div>
-                    <h3 className='text-lg font-bold'>Card with Shining Border</h3>
-                    <div>
-                        <p>Mouse X: {x}</p>
-                        <p>Mouse Y: {y}</p>
+                <div className={`text-5xl/loose ${borel.className}`}>
+                    <div className='relative w-[121px] h-[80px] pointer-events-none'>
+                        <span className='absolute z-20 shine-text'>hello</span>
+                        <span className='absolute z-10 text-[hsl(0_0%_12%)]'>hello</span>
                     </div>
                 </div>
             </div>
 
             <style jsx>{`
-                .shine {
-                    background:
-                        radial-gradient(circle at calc(${x} * 1px) calc(${y} * 1px), hsl(0 0% 100% / 0.5), transparent 15vmin), transparent;
+                .shine-text {
+                    background-clip: text;
+                    -webkit-background-clip: text;
+                    color: transparent;
+                    background-image:
+                        radial-gradient(circle at calc(${x}px) calc(${y}px), hsl(0 0% 100% / 0.5), transparent 5vmin);
                     background-attachment: fixed;
-                    pointer-events: none;
                 }
                 `}
             </style>
@@ -64,13 +69,13 @@ export default function Home() {
                 <motion.div 
                     className="bg-repeat bg-fixed w-full h-full heropattern-graphpaper-zinc-900"
                     animate={{
-                    opacity: [0.3, 0.6, 0.3]
+                        opacity: [0.3, 0.6, 0.3]
                     }}
                     transition={{
-                    duration: 6,
-                    ease: "easeInOut",
-                    repeat: Infinity,
-                    repeatDelay: 0,
+                        duration: 6,
+                        ease: "easeInOut",
+                        repeat: Infinity,
+                        repeatDelay: 0,
                     }}
                 />
             </div>
