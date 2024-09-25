@@ -63,9 +63,12 @@ export default function Home() {
               />
             </svg>
           </div>
-          <div className="absolute h-[500vh] inset-0 -z-10 bg-[url('https://cdn.pixabay.com/animation/2023/03/19/02/34/02-34-11-741_512.gif')]"></div>
+          <div className="absolute h-[100%] inset-0 -z-10 bg-[url('https://cdn.pixabay.com/animation/2023/03/19/02/34/02-34-11-741_512.gif')]"></div>
         </div>
-        <div className="w-full h-[250vh]"></div>
+        
+        <div className="w-full h-[10vh] bg-[url('https://cdn.pixabay.com/animation/2023/03/19/02/34/02-34-11-741_512.gif')]">
+        </div>
+
       </div>
     </>
   );
