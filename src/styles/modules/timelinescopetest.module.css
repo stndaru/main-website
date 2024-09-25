@@ -1,0 +1,51 @@
+.mainbody {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+
+  /* increases the timeline scope from the .scroller <div> element
+        to the whole <body> */
+  timeline-scope: --myScroller;
+}
+
+.content,
+.scroller {
+  flex: 1;
+}
+
+.scroller {
+  overflow: scroll;
+  scroll-timeline-name: --myScroller;
+  background: deeppink;
+}
+
+.longelement {
+  height: 2000px;
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+  border-radius: 10px;
+  background-color: rebeccapurple;
+  position: fixed;
+  top: 20px;
+  left: 0%;
+}
+
+.animation {
+  animation: rotate-appear;
+  animation-timeline: --myScroller;
+}
+
+@keyframes rotate-appear {
+  from {
+    rotate: 0deg;
+    left: 0%;
+  }
+
+  to {
+    rotate: 720deg;
+    left: 100%;
+  }
+}

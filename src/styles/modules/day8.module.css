@@ -1,0 +1,89 @@
+.rootelement {
+  timeline-scope: --buffer, --outro;
+}
+
+.spacer {
+  height: 100vh;
+  margin-top: 120vh;
+  view-timeline: --buffer;
+}
+
+.videoclass {
+  --to: 0;
+  translate: 0 50%;
+}
+
+.videoclass,
+.header {
+  animation: lift both linear;
+  animation-timeline: scroll(root);
+  animation-range: 0 100vh;
+}
+
+.header {
+  --to: -100%;
+}
+
+.videoclass {
+  --to: 0;
+  translate: 0 50%;
+}
+
+.videomaskh1 {
+  scale: 100;
+  transform-origin: calc(39 * 1%) calc(50 * 1%);
+  animation: shrink both ease-out;
+  animation-timeline: --buffer;
+  animation-range: entry;
+}
+
+@keyframes shrink {
+  to {
+    scale: 1;
+  }
+}
+
+@keyframes reveal {
+  to {
+    opacity: var(--light, 1);
+  }
+}
+
+@keyframes lift {
+  to {
+    translate: 0 var(--to, 0);
+  }
+}
+
+.videocontainer {
+  --font-level: 10;
+  position: sticky;
+  inset: 0;
+  height: 100vh;
+}
+
+.videomask {
+  height: 100vh;
+  position: absolute;
+  z-index: 2;
+  background: white;
+  color: black;
+  display: grid;
+  place-items: center;
+  filter: url(#knockout-filter);
+  inset: 0;
+  overflow: hidden;
+}
+
+.videoclass {
+  height: 100vh;
+  width: 100vw;
+  object-fit: cover;
+}
+
+.videomaskh1 {
+  display: flex;
+  text-align: center;
+  margin: 0;
+  anchor-name: --head;
+}

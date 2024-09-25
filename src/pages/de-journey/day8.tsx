@@ -2,7 +2,7 @@ import Image from "next/image";
 import { Space_Mono, Plus_Jakarta_Sans } from "next/font/google";
 import { motion } from "framer-motion";
 import { HeadComponent } from "../../components/core/HeadComponent";
-// import styles from '../../styles/modules/day1.module.css';
+import styles from "../../styles/modules/day8.module.css";
 import { useState, useEffect } from "react";
 
 const SpaceMono = Space_Mono({
@@ -19,7 +19,7 @@ export default function Home() {
     <>
       <HeadComponent />
       <div
-        className={`flex flex-col items-center border-none ${SpaceMono.className}`}
+        className={`flex flex-col items-center border-none ${SpaceMono.className} ${styles.rootelement}`}
       >
         <div className="flex flex-col w-full h-[40vh] bg-white justify-center content-center text-center border-none">
           <p className={`text-lg text-rose-600 ${plusJakartaSans.className}`}>
@@ -65,11 +65,37 @@ export default function Home() {
           </div>
           <div className="absolute h-[100%] inset-0 -z-10 bg-[url('https://cdn.pixabay.com/animation/2023/03/19/02/34/02-34-11-741_512.gif')]"></div>
         </div>
-        
-        <div className="w-full h-[10vh] bg-[url('https://cdn.pixabay.com/animation/2023/03/19/02/34/02-34-11-741_512.gif')]">
-        </div>
 
+        {/* Knockout Filter Starts Here */}
+        <div className="header w-full h-[10vh] bg-[url('https://cdn.pixabay.com/animation/2023/03/19/02/34/02-34-11-741_512.gif')]"></div>
+        <div>
+          <div className={styles.videocontainer}>
+            <img
+              src="https://cdn.pixabay.com/animation/2023/03/19/02/34/02-34-11-741_512.gif"
+              className=".videoclass"
+            ></img>
+            <section className={styles.videomask}>
+              <h1 className={styles.videomaskh1}>GALAXY</h1>
+            </section>
+          </div>
+          <section className={styles.spacer}></section>
+        </div>
       </div>
+
+      <svg>
+        <defs>
+          <filter id="knockout-filter" colorInterpolationFilters="sRGB">
+            <feColorMatrix
+              result="knocked"
+              type="matrix"
+              values="1 0 0 0 0
+                    0 1 0 0 0
+                    0 0 1 0 0
+                    1 1 1 -1 1"
+            />
+          </filter>
+        </defs>
+      </svg>
     </>
   );
 }
