@@ -1,0 +1,47 @@
+.rootelement {
+  timeline-scope: --buffer, --outro;
+}
+
+.spacer {
+  height: 100vh;
+  margin-top: 120vh;
+  view-timeline: --buffer;
+}
+
+.videomaskh2 {
+  font-size: large;
+  position: sticky;
+  top: 50%;
+  display: flex;
+  text-align: center;
+  margin: 0;
+  opacity: 1;
+  animation: disappear both ease-out;
+  animation-timeline: --buffer;
+  animation-range: entry;
+}
+
+.videomaskh1 {
+  scale: 800;
+  transform-origin: 46% 52%;
+  animation: shrink both ease-out;
+  animation-timeline: --buffer;
+  animation-range: entry;
+  display: flex;
+  text-align: center;
+  margin: 0;
+  z-index: -25;
+}
+
+@keyframes disappear {
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes shrink {
+  to {
+    scale: 5;
+    transform-origin: 50% 52%;
+  }
+}
