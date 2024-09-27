@@ -48,11 +48,7 @@ export default function Home() {
         className={`flex h-screen flex-col items-center justify-between bg-zinc-950 ${plusJakartaSans.className}`}
       >
         <div className="flex w-full h-full z-10 items-center content-center justify-center gap-4">
-          <a
-            className="flex btn group cursor-pointer bg-gradient-to-b from-[hsla(184,21%,38%,0.7)] to-70% to-[#063F48] rounded-[999px] border border-2 border-[#003138] hover:border-[#09F394] p-[1px] active:scale-[97%] active:translate-y-[0.5px] transition ease-in-out overflow-hidden transition ease-in-out"
-            href="https://x.com/farrelput/status/1839255595343368543"
-            target="_blank"
-          >
+          <a className="flex btn group cursor-pointer bg-gradient-to-b from-[hsla(184,21%,38%,0.7)] to-70% to-[#063F48] rounded-[999px] border border-2 border-[#003138] hover:border-[#09F394] p-[1px] active:scale-[97%] active:translate-y-[0.5px] transition ease-in-out overflow-hidden transition ease-in-out">
             <div className="relative w-[200px] h-[60px] bg-gradient-to-b from-[#002C31] to-[#063F48] rounded-[999px]">
               <div className="absolute w-full h-full opacity-0 [box-shadow:inset_0px_5px_5px_0px_rgba(0,_0,_0,_0.25)] bg-[url('https://img.freepik.com/premium-photo/design-space-paper-textured-background_933190-13.jpg')] group-hover:opacity-100 group-active:opacity-0 transition rounded-[999px]"></div>
               <h1 className="absolute w-full h-fit top-1/2 -translate-y-1/2 text-center text-[#09F394] font-medium group-hover:text-transparent transition ease-in-out">

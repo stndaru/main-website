@@ -22,7 +22,7 @@
 }
 
 .videomaskh1 {
-  scale: 800;
+  scale: 1200;
   transform-origin: 46% 52%;
   animation: shrink both ease-out;
   animation-timeline: --buffer;
