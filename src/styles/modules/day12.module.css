@@ -1,0 +1,61 @@
+.bodyElement {
+  timeline-scope: --videoScroller;
+}
+
+.videoContent {
+  view-timeline: --videoScroller;
+}
+
+.videoFilter {
+  animation: greyed both ease-out;
+  animation-timeline: --videoScroller;
+  filter: saturate(0%) grayscale(100%) brightness(80%);
+}
+
+.noiseFilter {
+  animation: noised both ease-out;
+  animation-timeline: --videoScroller;
+  opacity: 0.5;
+}
+
+.textDisplay {
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typing both steps(30, end);
+  animation-timeline: --videoScroller;
+  border-right: none;
+  width: 0;
+}
+
+@keyframes noised {
+  25% {
+    opacity: 0.5;
+  }
+  80% {
+    opacity: 0;
+  }
+}
+
+@keyframes greyed {
+  to {
+    filter: saturate(100%) grayscale(0%) brightness(80%);
+  }
+}
+
+@keyframes typing {
+  34% {
+    border-right: none;
+  }
+  35% {
+    border-right: 0.1em solid white;
+    width: 0;
+  }
+  80% {
+    border-right: 0.1em solid white;
+    width: 100%;
+  }
+  100% {
+    border-right: 0.1em solid white;
+    width: 100%;
+  }
+}
