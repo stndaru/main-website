@@ -37,18 +37,62 @@ export default function Home() {
                         [box-shadow:inset_1px_1px_1px_0_hsla(0,0%,100%,1),inset_-1px_-1px_2px_0_hsla(0,0%,0%,0.4)]
                         p-8 sm:p-16 gap-8 sm:gap-12 rounded-3xl shadow-xl"
           >
-            <ButtonComponent description={"7"} isNumber={true} />
-            <ButtonComponent description={"8"} isNumber={true} />
-            <ButtonComponent description={"9"} isNumber={true} />
-            <ButtonComponent description={"4"} isNumber={true} />
-            <ButtonComponent description={"5"} isNumber={true} />
-            <ButtonComponent description={"6"} isNumber={true} />
-            <ButtonComponent description={"1"} isNumber={true} />
-            <ButtonComponent description={"2"} isNumber={true} />
-            <ButtonComponent description={"3"} isNumber={true} />
-            <ButtonComponent description={"•"} isNumber={true} />
-            <ButtonComponent description={"0"} isNumber={true} />
-            <ButtonComponent description={"Enter"} />
+            <ButtonComponent
+              description={"7"}
+              isNumber={true}
+              onClick={() => ""}
+            />
+            <ButtonComponent
+              description={"8"}
+              isNumber={true}
+              onClick={() => ""}
+            />
+            <ButtonComponent
+              description={"9"}
+              isNumber={true}
+              onClick={() => ""}
+            />
+            <ButtonComponent
+              description={"4"}
+              isNumber={true}
+              onClick={() => ""}
+            />
+            <ButtonComponent
+              description={"5"}
+              isNumber={true}
+              onClick={() => ""}
+            />
+            <ButtonComponent
+              description={"6"}
+              isNumber={true}
+              onClick={() => ""}
+            />
+            <ButtonComponent
+              description={"1"}
+              isNumber={true}
+              onClick={() => ""}
+            />
+            <ButtonComponent
+              description={"2"}
+              isNumber={true}
+              onClick={() => ""}
+            />
+            <ButtonComponent
+              description={"3"}
+              isNumber={true}
+              onClick={() => ""}
+            />
+            <ButtonComponent
+              description={"•"}
+              isNumber={true}
+              onClick={() => ""}
+            />
+            <ButtonComponent
+              description={"0"}
+              isNumber={true}
+              onClick={() => ""}
+            />
+            <ButtonComponent description={"Enter"} onClick={() => ""} />
           </div>
         </div>
         <div className="absolute top-0 w-full h-full">
