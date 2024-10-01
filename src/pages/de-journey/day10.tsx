@@ -13,7 +13,7 @@ export default function Home() {
     <>
       <HeadComponent />
       <div
-        className={`flex flex-col items-center border-none w-full bg-zinc-950 ${plusJakartaSans.className}`}
+        className={`relative h-screen items-center justify-between ${plusJakartaSans.className} overflow-hidden`}
       >
         <svg
           viewBox="0 0 2000 2000"
@@ -28,12 +28,12 @@ export default function Home() {
               stitchTiles="stitch"
             />
           </filter>
-          <rect width="500%" height="500%" filter="url(#noiseFilter)" />
+          <rect width="1000%" height="1200%" filter="url(#noiseFilter)" />
         </svg>
-        <div className="flex flex-col w-full h-[100vh] content-center items-center justify-center z-10">
-          <div className="flex items-center bg-gradient-to-br from-[#E8E4E3] to-[#D8D2CF] [box-shadow:inset_2px_2px_0px_0px_#FFF,0_10px_15px_-3px_rgb(0_0_0_/_0.1),_0_4px_6px_-4px_rgb(0_0_0_/_0.1)] w-fit h-fit rounded-lg p-8">
-            <div className="grid grid-cols-2 grid-rows-2 gap-[4px] bg-black rounded-lg p-[4px]">
-              <div className="flex items-center bg-[#E2DEDC] [box-shadow:inset_1px_1px_0px_0px_#FFF] w-[200px] h-[200px] rounded-lg p-6">
+        <div className="flex flex-col w-full h-full content-center items-center justify-center z-10 p-6 sm:p-16">
+          <div className="flex items-center bg-gradient-to-br from-[#E8E4E3] to-[#D8D2CF] [box-shadow:inset_2px_2px_0px_0px_#FFF,0_10px_15px_-3px_rgb(0_0_0_/_0.1),_0_4px_6px_-4px_rgb(0_0_0_/_0.1)] w-fit h-fit rounded-lg p-4 md:p-8">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-[4px] bg-black rounded-lg p-[4px]">
+              <div className="flex items-center bg-[#E2DEDC] [box-shadow:inset_1px_1px_0px_0px_#FFF] w-[160px] md:w-[200px] aspect-square rounded-lg p-4 md:p-6">
                 <div className="bg-gradient-to-br from-[#EFECEB] to-40% to-[hsl(17,12%,94%,0)] rounded-[999px] w-full aspect-square p-[2px]">
                   <div
                     className="[background-image:linear-gradient(to_bottom_right,hsla(12,12%,92%,0.2)_0%,hsla(20,9%,87%,0.2)_36%),radial-gradient(circle_at_top_left,#FBFAFA,#ECE9E7_20%,#E2DEDC_42%,#E2DEDC_87%)] 
@@ -67,7 +67,7 @@ export default function Home() {
                   </div>
                 </div>
               </div>
-              <div className="flex items-center bg-[#E2DEDC] [box-shadow:inset_1px_1px_0px_0px_#FFF] w-[200px] h-[200px] rounded-lg p-6">
+              <div className="flex items-center bg-[#E2DEDC] [box-shadow:inset_1px_1px_0px_0px_#FFF] w-[160px] md:w-[200px] spect-square rounded-lg p-4 md:p-6">
                 <div className="bg-gradient-to-br from-[#EFECEB] to-40% to-[hsl(17,12%,94%,0)] rounded-[999px] w-full aspect-square p-[2px]">
                   <div
                     className="[background-image:linear-gradient(to_bottom_right,hsla(12,12%,92%,0.2)_0%,hsla(20,9%,87%,0.2)_36%),radial-gradient(circle_at_top_left,#FBFAFA,#ECE9E7_20%,#E2DEDC_42%,#E2DEDC_87%)] 
@@ -101,7 +101,7 @@ export default function Home() {
                   </div>
                 </div>
               </div>
-              <div className="flex items-center bg-[#E2DEDC] [box-shadow:inset_1px_1px_0px_0px_#FFF] w-[200px] h-[200px] rounded-lg p-6">
+              <div className="flex items-center bg-[#E2DEDC] [box-shadow:inset_1px_1px_0px_0px_#FFF] w-[160px] md:w-[200px] aspect-square rounded-lg p-4 md:p-6">
                 <div className="bg-gradient-to-br from-[#EFECEB] to-40% to-[hsl(17,12%,94%,0)] rounded-[999px] w-full aspect-square p-[2px]">
                   <div
                     className="[background-image:linear-gradient(to_bottom_right,hsla(12,12%,92%,0.2)_0%,hsla(20,9%,87%,0.2)_36%),radial-gradient(circle_at_top_left,#FBFAFA,#ECE9E7_20%,#E2DEDC_42%,#E2DEDC_87%)] 
@@ -136,7 +136,7 @@ export default function Home() {
                   </div>
                 </div>
               </div>
-              <div className="flex items-center bg-[#E2DEDC] [box-shadow:inset_1px_1px_0px_0px_#FFF] w-[200px] h-[200px] rounded-lg p-6">
+              <div className="flex items-center bg-[#E2DEDC] [box-shadow:inset_1px_1px_0px_0px_#FFF] w-[160px] md:w-[200px] aspect-square rounded-lg p-4 md:p-6">
                 <div className="bg-gradient-to-br from-[#EFECEB] to-40% to-[hsl(17,12%,94%,0)] rounded-[999px] w-full aspect-square p-[2px]">
                   <div
                     className="[background-image:linear-gradient(to_bottom_right,hsla(12,12%,92%,0.2)_0%,hsla(20,9%,87%,0.2)_36%),radial-gradient(circle_at_top_left,#FBFAFA,#ECE9E7_20%,#E2DEDC_42%,#E2DEDC_87%)] 
@@ -173,7 +173,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className="absolute top-0 w-full h-full">
+        <div className="absolute top-0 -z-10 w-full h-full bg-zinc-950">
           <motion.div
             className="bg-repeat bg-fixed w-full h-full heropattern-graphpaper-zinc-900"
             animate={{

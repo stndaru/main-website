@@ -28,14 +28,14 @@ export default function Home() {
               stitchTiles="stitch"
             />
           </filter>
-          <rect width="500%" height="500%" filter="url(#noiseFilter)" />
+          <rect width="800%" height="1200%" filter="url(#noiseFilter)" />
         </svg>
         <div className="flex flex-col w-full h-[100vh] content-center items-center justify-center z-10">
           <div
-            className="grid grid-cols-3 grid-rows-4 p-8 sm:p-16 gap-8 sm:gap-12 rounded-3xl shadow-xl
+            className="h-fit w-[90%] min-[400px]:max-w-fit min-[400px]:max-w-[80%] grid grid-cols-3 max-[400px]:p-4 p-8 sm:p-12 max-[400px]:gap-4 gap-8 sm:gap-12 rounded-3xl shadow-xl
                         bg-gradient-to-br from-[#ABA9A7] via-50% via-[#85827E] to-[#93908E] 
                         [box-shadow:inset_1px_1px_1px_0_hsla(0,0%,100%,1),inset_-1px_-1px_2px_0_hsla(0,0%,0%,0.4)]
-                        p-8 sm:p-16 gap-8 sm:gap-12 rounded-3xl shadow-xl"
+                        "
           >
             <ButtonComponent
               description={"7"}
@@ -92,7 +92,11 @@ export default function Home() {
               isNumber={true}
               onClick={() => ""}
             />
-            <ButtonComponent description={"Enter"} onClick={() => ""} />
+            <ButtonComponent
+              description={"Enter"}
+              isNumber={false}
+              onClick={() => ""}
+            />
           </div>
         </div>
         <div className="absolute top-0 w-full h-full">

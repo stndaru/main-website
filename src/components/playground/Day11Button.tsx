@@ -13,7 +13,7 @@ export const ButtonComponent: React.FC<NumberProps> = ({
 }) => (
   <div
     onClick={onClick}
-    className="flex items-center bg-black w-full aspect-square p-[0.12rem] sm:p-[0.18rem] [box-shadow:inset_0px_-1px_1px_0px_hsla(0,0%,100%,0.25)]"
+    className="flex items-center bg-black w-full max-w-[120px] aspect-square p-[0.12rem] sm:p-[0.18rem] [box-shadow:inset_0px_-1px_1px_0px_hsla(0,0%,100%,0.25)]"
   >
     <div
       className="flex w-full aspect-square rounded-lg py-[0.4rem] sm:py-[0.8rem] px-[0.6rem] sm:px-[1rem] transition-all ease-out duration-150 cursor-pointer group
@@ -27,8 +27,8 @@ export const ButtonComponent: React.FC<NumberProps> = ({
       <div
         className={`select-none w-full text-zinc-300 group-active:text-zinc-400 ${
           isNumber
-            ? "text-lg sm:text-3xl"
-            : "text-sm sm:text-xl uppercase text-center"
+            ? "text-lg min-[460px]:text-3xl"
+            : "text-sm min-[460px]:text-xl uppercase text-center"
         }`}
       >
         {description}

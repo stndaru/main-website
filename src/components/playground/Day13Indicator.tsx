@@ -16,7 +16,7 @@ export const IndicatorComponent: React.FC<NumberProps> = ({
       id={objID}
       className="flex flex-row w-full h-fit pb-4 gap-2 sm:gap-4 text-zinc-900 items-center"
     >
-      <div className="flex p-[1px] items-center w-[12px] h-[12px] sm:w-[20px] sm:h-[20px] rounded-[999px] [background-image:linear-gradient(to_top_left,#FFF_0%,hsla(0,0%,0%,0)_50%)]">
+      <div className="h-[12px] w-[12px] flex p-[1px] items-center w-[12px] h-[12px] sm:w-[20px] sm:h-[20px] rounded-[999px] [background-image:linear-gradient(to_top_left,#FFF_0%,hsla(0,0%,0%,0)_50%)]">
         <div
           className={`w-full h-full rounded-[999px] transition 
                       ${

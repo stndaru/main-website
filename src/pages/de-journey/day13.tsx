@@ -26,7 +26,7 @@ export default function Home() {
     <>
       <HeadComponent />
       <div
-        className={`flex flex-col items-center border-none w-full bg-zinc-950 ${exo.className}`}
+        className={`flex flex-col items-center h-screen border-none w-full bg-zinc-950 ${exo.className} overflow-hidden`}
       >
         <svg
           viewBox="0 0 2000 2000"
@@ -43,9 +43,9 @@ export default function Home() {
           </filter>
           <rect width="1000%" height="1000%" filter="url(#noiseFilter)" />
         </svg>
-        <div className="flex flex-col w-full h-[100vh] content-center items-center justify-center z-10">
+        <div className="flex flex-col w-full h-screen md:h-full content-center items-center justify-center z-10">
           <div
-            className="h-[90vh] max-w-[80%] aspect-[4/6] grid grid-cols-3 grid-rows-4 p-8 sm:p-12 gap-8 sm:gap-12 rounded-3xl shadow-xl
+            className="h-fit w-[90%] min-[400px]:max-w-fit grid grid-cols-3 max-[400px]:p-4 p-8 sm:p-12 max-[400px]:gap-4 gap-8 sm:gap-12 rounded-3xl shadow-xl
                         bg-gradient-to-br from-[#ABA9A7] via-50% via-[#85827E] to-[#93908E] 
                         [box-shadow:inset_1px_1px_1px_0_hsla(0,0%,100%,1),inset_-1px_-1px_2px_0_hsla(0,0%,0%,0.4)]
                         "
