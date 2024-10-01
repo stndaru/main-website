@@ -70,10 +70,11 @@ export default function Home() {
         <div className="header w-full h-[10vh] bg-[url('https://cdn.pixabay.com/animation/2023/03/19/02/34/02-34-11-741_512.gif')]"></div>
         <div>
           <div className={styles.videocontainer}>
-            <img
+            <Image
               src="https://cdn.pixabay.com/animation/2023/03/19/02/34/02-34-11-741_512.gif"
               className=".videoclass"
-            ></img>
+              alt="Space gif from pixabay"
+            />
             <section className={styles.videomask}>
               <h1 className={styles.videomaskh1}>GALAXY</h1>
             </section>

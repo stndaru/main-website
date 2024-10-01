@@ -67,7 +67,7 @@ export default function Home() {
                   Timeless Classics.
                 </div>
                 <div className="text-sm md:text-lg sm:max-w-[75%] xl:max-w-[50%]">
-                  The 2000GT revolutionized the automotive world's view of
+                  The 2000GT revolutionized the automotive world&apos;s view of
                   Japan, then viewed as a producer of imitative and stodgily
                   practical vehicles. As a sleek, high-performance fastback
                   coupé, it demonstrated its auto makers could produce a sports
@@ -83,7 +83,7 @@ export default function Home() {
               src="/images/p1.jpg"
               layout="fill"
               objectFit="cover"
-              alt="Picture of website's creator, Stefanus Ndaru"
+              alt="Picture from the website's creator, Stefanus Ndaru"
               className="w-full h-full"
             />
           </div>
@@ -92,7 +92,7 @@ export default function Home() {
               src="/images/p2.jpg"
               layout="fill"
               objectFit="cover"
-              alt="Picture of website's creator, Stefanus Ndaru"
+              alt="Picture from the website's creator, Stefanus Ndaru"
               className="w-full h-full"
             />
           </div>
@@ -101,7 +101,7 @@ export default function Home() {
               src="/images/p3.jpg"
               layout="fill"
               objectFit="cover"
-              alt="Picture of website's creator, Stefanus Ndaru"
+              alt="Picture from the website's creator, Stefanus Ndaru"
               className="w-full h-full"
             />
           </div>
