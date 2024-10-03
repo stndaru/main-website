@@ -1,6 +1,6 @@
 import { Plus_Jakarta_Sans, Playfair } from "next/font/google";
 import { HeadComponent } from "../../components/core/HeadComponent";
-import styles from "../../styles/modules/day14.module.css";
+import styles from "../../styles/modules/day15.module.css";
 
 const plusJakartaSans = Plus_Jakarta_Sans({
   subsets: ["latin"],
