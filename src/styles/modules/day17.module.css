@@ -1,0 +1,21 @@
+@property --a {
+  syntax: "<angle>";
+  inherits: false;
+  initial-value: 0deg;
+}
+
+.borderInteraction {
+  background: conic-gradient(
+    from var(--a),
+    hsla(162 83% 45% / 0),
+    hsl(162, 83%, 45%) 60deg,
+    hsla(162 83% 45% / 0) 60deg 360deg
+  );
+  animation: borderAnimation 8s linear infinite;
+}
+
+@keyframes borderAnimation {
+  to {
+    --a: 1turn;
+  }
+}
