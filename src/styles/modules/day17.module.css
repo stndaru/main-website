@@ -19,3 +19,16 @@
     --a: 1turn;
   }
 }
+
+.svgClipBackground {
+  animation: svgClipAnimate 2s linear infinite;
+}
+
+@keyframes svgClipAnimate {
+  from {
+    y: 200%;
+  }
+  to {
+    y: -150%;
+  }
+}
