@@ -12,9 +12,9 @@ export default function Home() {
     <>
       <HeadComponent />
       <div
-        className={`flex flex-col items-center justify-center border-none w-full h-screen ${plusJakartaSans.className} ${styles.rootelement}`}
+        className={`flex flex-col items-center justify-center border-none w-full h-screen ${plusJakartaSans.className} ${styles.rootElement}`}
       >
-        <div className="relative flex h-[70vh] w-full lg:max-w-[50%] items-center justify-center">
+        <div className="relative flex h-[70vh] w-full lg:max-w-[700px] items-center justify-center">
           <div className="flex p-4">
             <div
               className={`flex ${styles.borderInteraction} h-[100px] aspect-square p-[1px] rounded-2xl`}
@@ -88,17 +88,38 @@ export default function Home() {
             </div>
           </div>
 
-          {/* <div>
-            <div className="absolute top-[40%] left-[15%] -translate-y-[40%] -translate-x-[15%] w-[80px] aspect-square bg-gray-200">
-              <div className="flex w-full aspect-square rounded-[999px] bg-gray-100"></div>
+          <div>
+            <div className="absolute top-[40%] left-[18%] -translate-y-[40%] -translate-x-[18%] w-[80px] aspect-square bg-gray-200">
+              <div
+                className={`absolute -z-10 flex ${styles.circleInteraction} w-[120%] -left-[10%] -top-[5.5%] aspect-square p-[1px] rounded-[999px]`}
+              >
+                <div className="relative w-full h-full bg-gray-200 items-center justify-center p-2 rounded-[999px] border border-1 border-gray-300"></div>
+              </div>
+              <div
+                className={`${styles.greenGlowShadowAnimation} flex w-full aspect-square rounded-[999px] bg-gray-100`}
+              ></div>
+              <div className="flex flex-col w-full items-center align-center p-4">
+                <p className="text-gray-400">Discord</p>
+              </div>
             </div>
-            <div className="absolute top-[67%] left-[20%] -translate-y-[67%] -translate-x-[20%] w-[80px] aspect-square bg-gray-200">
+            <div className="absolute top-[70%] left-[27%] -translate-y-[70%] -translate-x-[27%] w-[80px] aspect-square bg-gray-200">
+              <div
+                className={`absolute -z-10 flex ${styles.circleInteraction} w-[120%] -left-[10%] -top-[5.5%] aspect-square p-[1px] rounded-[999px]`}
+              >
+                <div className="relative w-full h-full bg-gray-200 items-center justify-center p-2 rounded-[999px] border border-1 border-gray-300"></div>
+              </div>
               <div className="flex w-full aspect-square rounded-[999px] bg-gray-100"></div>
+              <div className="flex flex-col w-full items-center align-center p-4">
+                <p className="text-gray-400">WhatsApp</p>
+              </div>
             </div>
-            <div className="absolute top-[80%] left-[50%] -translate-y-[80%] -translate-x-[50%] w-[80px] aspect-square bg-gray-200">
+            <div className="absolute top-[85%] left-[50%] -translate-y-[85%] -translate-x-[50%] w-[80px] aspect-square bg-gray-200">
               <div className="flex w-full aspect-square rounded-[999px] bg-gray-100"></div>
+              <div className="flex flex-col w-full items-center align-center p-4">
+                <p className="text-gray-400">Line</p>
+              </div>
             </div>
-          </div> */}
+          </div>
         </div>
       </div>
 
