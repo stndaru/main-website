@@ -7,11 +7,11 @@
 .borderInteraction {
   background: conic-gradient(
     from var(--a),
-    hsla(162 83% 45% / 0),
-    hsl(162, 83%, 45%) 60deg,
-    hsla(162 83% 45% / 0) 60deg 360deg
+    hsla(170 63% 60% / 0),
+    hsl(170, 63%, 60%) 60deg,
+    hsla(170 63% 60% / 0) 60deg 360deg
   );
-  animation: borderAnimation 8s linear infinite;
+  animation: borderAnimation 5s linear infinite;
 }
 
 @keyframes borderAnimation {
@@ -58,25 +58,91 @@
 }
 
 .greenGlowShadowAnimation {
-  animation: 8s greenGlow linear forwards;
+  animation: 12s greenGlow linear forwards;
 }
 
 @keyframes greenGlow {
-  12% {
+  6% {
     box-shadow: 0 16px 32px -12px rgb(0 0 0 / 0);
   }
-  14% {
-    box-shadow: 0 24px 48px -12px hsla(162, 83%, 45%, 0.5),
-      0 4px 8px -4px hsla(162, 83%, 45%, 0.7),
-      0 2px 2px 0px hsla(162, 83%, 45%, 0.7);
+  8% {
+    box-shadow: 0 24px 48px -12px hsla(170, 63%, 60%, 0.3),
+      0 4px 8px -4px hsla(170, 63%, 60%, 0.4),
+      0 2px 2px 0px hsla(170, 63%, 60%, 0.7);
   }
   80% {
-    box-shadow: 0 24px 48px -12px hsla(162, 83%, 45%, 0.5),
-      0 4px 8px -4px hsla(162, 83%, 45%, 0.7),
-      0 2px 2px 0px hsla(162, 83%, 45%, 0.7);
+    box-shadow: 0 24px 48px -12px hsla(162, 83%, 45%, 0.4),
+      0 4px 8px -4px hsla(162, 83%, 45%, 0.4),
+      0 2px 2px 0px hsla(162, 83%, 45%, 0.6);
   }
   82% {
     box-shadow: 0 16px 32px -12px rgb(0 0 0 / 0);
+  }
+}
+
+.optimizedContainer {
+  animation: 6s hideBackgroundAndBorder 5s ease-in-out forwards;
+}
+
+.optimizedText {
+  animation: 4s hideAndWidened 7s ease-in-out forwards;
+}
+
+@keyframes hideBackgroundAndBorder {
+  from {
+    opacity: 0;
+    background: transparent;
+    border: 0;
+    box-shadow: 0 8px 16px -4px hsla(162, 83%, 45%, 0.3);
+    transform: translateY(240px) translateX(-50%);
+    filter: blur(400px);
+  }
+  30% {
+    opacity: 1;
+    background: #f3f4f6;
+    border: 1;
+    box-shadow: 0 8px 16px -4px hsla(0, 0%, 0%, 0.2);
+    transform: translateY(0px) translateX(-50%);
+    filter: blur(0px);
+  }
+  70% {
+    opacity: 1;
+    background: #f3f4f6;
+    border: 1;
+    box-shadow: 0 8px 16px -4px hsla(0, 0%, 0%, 0.2);
+    transform: translateY(0px) translateX(-50%);
+    filter: blur(0px);
+  }
+  to {
+    opacity: 0;
+    transform: translateY(-2400px) translateX(-50%);
+    filter: blur(400px);
+  }
+}
+
+@keyframes hideAndWidened {
+  from {
+    padding: 0px 0px 0px 0px;
+    width: 0;
+    opacity: 0;
+  }
+  20% {
+    padding: 0px 4px 0px 4px;
+    width: auto;
+    opacity: 0;
+  }
+  30% {
+    opacity: 1;
+  }
+  90% {
+    padding: 0px 4px 0px 4px;
+    width: auto;
+    opacity: 1;
+  }
+  to {
+    padding: 0px 0px 0px 0px;
+    width: 0;
+    opacity: 0;
   }
 }
 

@@ -91,25 +91,56 @@ export default function Home() {
           <div>
             <div className="absolute top-[40%] left-[18%] -translate-y-[40%] -translate-x-[18%] w-[80px] aspect-square bg-gray-200">
               <div
-                className={`absolute -z-10 flex ${styles.circleInteraction} w-[120%] -left-[10%] -top-[5.5%] aspect-square p-[1px] rounded-[999px]`}
+                className={`absolute -z-10 flex ${styles.circleInteraction} w-[130%] -left-[15%] -top-[8%] aspect-square p-[1px] rounded-[999px]`}
               >
                 <div className="relative w-full h-full bg-gray-200 items-center justify-center p-2 rounded-[999px] border border-1 border-gray-300"></div>
+              </div>
+              <div
+                className={`${styles.optimizedContainer} absolute -top-[10%] left-[50%] -translate-x-[50%] z-20 flex flex-row p-1 rounded-[999px] opacity-0`}
+              >
+                <div className="w-[20px] aspect-square bg-[hsla(170,63%,60%,1)] rounded-[999px] p-[2px]">
+                  <svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    className="w-full h-full"
+                  >
+                    <g id="SVGRepo_iconCarrier">
+                      <path
+                        d="M4 12.6111L8.92308 17.5L20 6.5"
+                        stroke="#fff"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      ></path>
+                    </g>
+                  </svg>
+                </div>
+                <p
+                  className={`${styles.optimizedText} text-sm text-[hsla(170,63%,60%,1)] leading-[18px] p-0 w-0 opacity-0`}
+                >
+                  Optimized
+                </p>
               </div>
               <div
                 className={`${styles.greenGlowShadowAnimation} flex w-full aspect-square rounded-[999px] bg-gray-100`}
               ></div>
-              <div className="flex flex-col w-full items-center align-center p-4">
+              <div className="flex flex-col w-full items-center align-center py-6">
                 <p className="text-gray-400">Discord</p>
               </div>
             </div>
-            <div className="absolute top-[70%] left-[27%] -translate-y-[70%] -translate-x-[27%] w-[80px] aspect-square bg-gray-200">
+
+            <div className="absolute top-[72%] left-[27%] -translate-y-[72%] -translate-x-[27%] w-[80px] aspect-square bg-gray-200">
               <div
-                className={`absolute -z-10 flex ${styles.circleInteraction} w-[120%] -left-[10%] -top-[5.5%] aspect-square p-[1px] rounded-[999px]`}
+                className={`absolute -z-10 flex ${styles.circleInteraction} w-[130%] -left-[15%] -top-[8%] aspect-square p-[1px] rounded-[999px]`}
               >
                 <div className="relative w-full h-full bg-gray-200 items-center justify-center p-2 rounded-[999px] border border-1 border-gray-300"></div>
               </div>
-              <div className="flex w-full aspect-square rounded-[999px] bg-gray-100"></div>
-              <div className="flex flex-col w-full items-center align-center p-4">
+
+              <div
+                className={`${styles.greenGlowShadowAnimation} flex w-full aspect-square rounded-[999px] bg-gray-100`}
+              ></div>
+              <div className="flex flex-col w-full items-center align-center py-6">
                 <p className="text-gray-400">WhatsApp</p>
               </div>
             </div>
